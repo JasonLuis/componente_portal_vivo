@@ -43,6 +43,7 @@
     margin: 5px 0;
     padding: 0;
     display: inline-block;
+    min-width: 350px;
   }
   
   .rb-container ul.rb li {
@@ -51,7 +52,6 @@
     margin: auto;
     margin-left: 3px;
     min-height: 50px;
-    max-width: 568px;
     border-left: 2px dashed #ddd;
     padding: 0 0 50px 30px;
     position: relative;
@@ -90,7 +90,7 @@
   ul.rb li .description {
     color: #666666;
     width: 100%;
-    min-width: 250px;
+    max-width: 568px;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
