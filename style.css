@@ -51,6 +51,7 @@
     margin: auto;
     margin-left: 3px;
     min-height: 50px;
+    max-width: 568px;
     border-left: 2px dashed #ddd;
     padding: 0 0 50px 30px;
     position: relative;
@@ -61,7 +62,7 @@
   .rb-container ul.rb li::before {
     position: absolute;
     left: -18px;
-    top: -5px;
+    top: 0px;
     content: counter(myIndex);
     text-align: center;
     border: 1px solid #ddd;
@@ -79,14 +80,38 @@
     font-size: 16px;
     line-height: 24px;
     position: relative;
-    width: 100vw;
+    width: 100%;
   }
-
+  ul.rb span {
+    color: #666666;
+    margin-left: -2px;
+    font-weight: 300;
+  }
   ul.rb li .description {
     color: #666666;
-    width: 568px;
+    width: 100%;
+    min-width: 250px;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
   }
 /*  */
+
+@media (max-width: 576px) {
+  .container {
+    width: 100vw;
+    margin-top: 10px;
+    display: block;
+  }
+
+
+
+  .rb-container {
+    margin-left: 50%;
+  }
+
+  .info p {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
